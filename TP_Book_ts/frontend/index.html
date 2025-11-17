@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Reading Tracker</title>
+    <script type="module" src="./main.ts"></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-6">
+
+    <h1 class="text-3xl font-bold mb-6">Book Reading Tracker</h1>
+
+    <form id="bookForm" class="bg-white p-6 rounded shadow-md space-y-4">
+        <input type="text" id="title" placeholder="Title" class="input">
+        <input type="text" id="author" placeholder="Author" class="input">
+        <input type="number" id="pages" placeholder="Number of Pages" class="input">
+        <input type="number" id="pagesRead" placeholder="Pages Read" class="input">
+        <select id="status" class="input">
+            <option>Read</option>
+            <option>Re-read</option>
+            <option>DNF</option>
+            <option>Currently reading</option>
+            <option>Returned Unread</option>
+            <option>Want to read</option>
+        </select>
+        <select id="format" class="input">
+            <option>Print</option>
+            <option>PDF</option>
+            <option>Ebook</option>
+            <option>AudioBook</option>
+        </select>
+        <input type="number" id="price" placeholder="Price" class="input">
+        <input type="text" id="suggestedBy" placeholder="Suggested By" class="input">
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Add Book</button>
+    </form>
+
+    <div id="booksList" class="mt-6"></div>
+
+</body>
+</html>
